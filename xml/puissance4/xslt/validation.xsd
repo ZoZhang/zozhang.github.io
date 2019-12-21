@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.zhangzhao.fr/xsd" xmlns="http://xml.zhangzhao.fr/xsd" elementFormDefault="qualified">
+
+    <!-- Elements Layout-->
+    <xsd:element name="vector" type="vectorType"/>
+
+    <!-- Elements Types-->
+    <xsd:complexType name="vectorType">
+        <xsd:sequence>
+           <xsd:element name="layout" type="layoutType"/>
+        </xsd:sequence>
+        <xsd:attributeGroup ref="vectorAttributeGroup"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="layoutType">
+        <xsd:sequence>
+           <xsd:element name="columns" type="columnsType" minOccurs="7" maxOccurs="7"/>
+        </xsd:sequence>
+        <xsd:attributeGroup ref="layoutAttributeGroup"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="columnsType">
+        <xsd:sequence>
+           <xsd:element name="circle" type="circleType" minOccurs="6" maxOccurs="6"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Elements Attributes-->
+    <xsd:attributeGroup name="vectorAttributeGroup">
+        <xsd:attribute name="width"  type="xsd:string" fixed="635px" use="required"/>
+        <xsd:attribute name="height" type="xsd:string" fixed="620px" use="required"/>
+        <xsd:attribute name="version" type="xsd:string" fixed="1.0" use="required"/>
+    </xsd:attributeGroup>
+
+    <xsd:attributeGroup name="layoutAttributeGroup">
+        <xsd:attribute name="y"      type="xsd:integer" fixed="0"    use="required"/>
+        <xsd:attribute name="x"      type="xsd:integer" fixed="0"    use="required"/>
+        <xsd:attribute name="width"  type="xsd:string" fixed="100%" use="required"/>
+        <xsd:attribute name="height" type="xsd:string" fixed="100%" use="required"/>
+        <xsd:attribute name="color"  type="xsd:string" fixed="#0A35DC" use="required"/>
+    </xsd:attributeGroup>
+
+    <xsd:complexType name="circleType">
+        <xsd:attribute name="x" use="required">
+            <xsd:simpleType>
+             <xsd:restriction base="xsd:integer">
+               <xsd:enumeration value="65"/>
+               <xsd:enumeration value="160"/>
+               <xsd:enumeration value="260"/>
+               <xsd:enumeration value="360"/>
+               <xsd:enumeration value="465"/>
+               <xsd:enumeration value="570"/>
+             </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="y" use="required">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:integer">
+                   <xsd:enumeration value="60"/>
+                   <xsd:enumeration value="160"/>
+                   <xsd:enumeration value="260"/>
+                   <xsd:enumeration value="360"/>
+                   <xsd:enumeration value="460"/>
+                   <xsd:enumeration value="560"/>
+                 </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>             
+        <xsd:attribute name="size" type="xsd:integer" use="required"/>
+        <xsd:attribute name="color" use="required">
+           <xsd:simpleType>
+               <xsd:restriction base="xsd:string">
+                   <xsd:enumeration value="red"/>
+                   <xsd:enumeration value="white"/>
+                   <xsd:enumeration value="drakorange"/>
+               </xsd:restriction>
+           </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>

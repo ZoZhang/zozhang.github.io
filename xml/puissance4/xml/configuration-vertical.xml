@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vector width="740px" height="620px" version="1.0">
+  	<layout color="#0A35DC" width="100%" height="100%" y="0" x="0">
+		<columns>
+			<circle x="65" y="60" size="40" color="white"/>
+			<circle x="65" y="160" size="40" color="white"/>
+			<circle x="65" y="260" size="40" color="white"/>
+			<circle x="65" y="360" size="40" color="red"/>
+			<circle x="65" y="465" size="40" color="orange"/>
+			<circle x="65" y="570" size="40" color="red"/> 
+		</columns>
+		<columns>
+			<circle x="160" y="60" size="40" color="white"/>
+			<circle x="160" y="160" size="40" color="white"/>
+			<circle x="160" y="260" size="40" color="white"/>
+			<circle x="160" y="360" size="40" color="orange"/>
+			<circle x="160" y="465" size="40" color="orange"/>
+			<circle x="160" y="570" size="40" color="red"/> 
+		</columns>
+		<columns>
+			<circle x="260" y="60" size="40" color="white"/>
+			<circle x="260" y="160" size="40" color="white"/>
+			<circle x="260" y="260" size="40" color="red"/>
+			<circle x="260" y="360" size="40" color="red"/>
+			<circle x="260" y="465" size="40" color="red"/>
+			<circle x="260" y="570" size="40" color="orange"/> 
+		</columns>
+		<columns>
+			<circle x="360" y="60" size="40" color="white"/>
+			<circle x="360" y="160" size="40" color="orange"/>
+			<circle x="360" y="260" size="40" color="orange"/>
+			<circle x="360" y="360" size="40" color="orange"/>
+			<circle x="360" y="465" size="40" color="orange"/>
+			<circle x="360" y="570" size="40" color="red"/> 
+		</columns>
+		<columns>
+			<circle x="465" y="60" size="40" color="white"/>
+			<circle x="465" y="160" size="40" color="white"/>
+			<circle x="465" y="260" size="40" color="red"/>
+			<circle x="465" y="360" size="40" color="orange"/>
+			<circle x="465" y="465" size="40" color="red"/>
+			<circle x="465" y="570" size="40" color="orange"/> 
+		</columns>
+		<columns>
+			<circle x="570" y="60" size="40" color="white"/>
+			<circle x="570" y="160" size="40" color="white"/>
+			<circle x="570" y="260" size="40" color="white"/>
+			<circle x="570" y="360" size="40" color="white"/>
+			<circle x="570" y="465" size="40" color="white"/>
+			<circle x="570" y="570" size="40" color="white"/> 
+		</columns>
+		<columns>
+			<circle x="675" y="60" size="40" color="white"/>
+			<circle x="675" y="160" size="40" color="white"/>
+			<circle x="675" y="260" size="40" color="white"/>
+			<circle x="675" y="360" size="40" color="white"/>
+			<circle x="675" y="465" size="40" color="white"/>
+			<circle x="675" y="570" size="40" color="white"/> 
+		</columns>
+  	</layout>
+</vector>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>XSL Transformation - Puissance 4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="XSL Transformation - Puissance 4">
+	<meta name="author" content="ZHANG Zhao">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<main>
+	<div class="row-fluid">
+		<section class="span5">
+			<article>
+			   <header><h1>#XML</h1>
+			   	<p>
+			   		<button class="btn btn-primary" value="horizontal" >Horizontal</button>
+			   		<button class="btn btn-primary" value="vertical">Vertical</button>
+			   		<button class="btn btn-primary" value="diagonal">Diagonal</button>
+			    </p>
+			   </header>
+			   <footer>
+	  			<textarea id="xml">
+	  			</textarea>
+			   </footer>
+			</article>
+			<article>
+			   <header><h1>#XSLT</h1></header>
+			   <footer>
+	  			<textarea id="xslt">
+	  			</textarea>
+				<button class="btn btn-success btn-large" value="transform">Génération d'un SVG</button>
+			   </footer>
+			</article>
+		</section>
+		<section class="span5">
+			<article>
+			   <header><h1>#SVG</h1></header>
+			   <footer>
+					<div id="transformation"></div>
+			   </footer>
+			</article>
+		</section>
+	</div>
+</main>
+<script src="js/jquery.3.4.1.js"></script>
+<script src="js/jquery.xslt.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
